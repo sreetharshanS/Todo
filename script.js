@@ -27,7 +27,6 @@ function addTask() {
 
   const editBtn = document.createElement("button");
   editBtn.className = "edit-btn";
-  editBtn.innerHTML = "✏️";
   editBtn.addEventListener("click", () => {
     const newText = prompt("Edit task:", span.textContent);
     if (newText !== null) span.textContent = newText;
@@ -35,7 +34,6 @@ function addTask() {
 
   const deleteBtn = document.createElement("button");
   deleteBtn.className = "delete-btn";
-  deleteBtn.innerHTML = "🗑️";
   deleteBtn.addEventListener("click", () => {
     li.remove();
     updateCount();
